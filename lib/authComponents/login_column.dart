@@ -11,55 +11,61 @@ class LoginColumn extends StatelessWidget {
     return Column(
       children: [
         const SizedBox(height: 16.0),
-        const Padding(
-          padding: EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
-          child: TextField(
-            enableSuggestions: false,
-            autocorrect: false,
-            keyboardType: TextInputType.emailAddress,
-            decoration: InputDecoration(
-              hintText: 'Enter your email here',
-              labelText: 'Email Id',
-              labelStyle: TextStyle(
-                color: ColorConstants.accentColor,
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(
+        Container(
+          padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+          child: Container(
+            color: ColorConstants.textFieldBg,
+            child: const TextField(
+              enableSuggestions: false,
+              autocorrect: false,
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                hintText: 'Enter your email here',
+                labelText: 'Email Id',
+                labelStyle: TextStyle(
                   color: ColorConstants.accentColor,
-                  width: 1.0,
                 ),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: ColorConstants.accentColor,
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: ColorConstants.accentColor,
+                    width: 1.0,
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: ColorConstants.accentColor,
+                  ),
                 ),
               ),
             ),
           ),
         ),
         const SizedBox(height: 16.0),
-        const Padding(
-          padding: EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
-          child: TextField(
-            enableSuggestions: false,
-            autocorrect: false,
-            obscureText: true,
-            keyboardType: TextInputType.visiblePassword,
-            decoration: InputDecoration(
-              hintText: 'Enter your password here',
-              labelText: 'Password',
-              labelStyle: TextStyle(
-                color: ColorConstants.accentColor,
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(
+        Container(
+          padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+          child: Container(
+            color: ColorConstants.textFieldBg,
+            child: const TextField(
+              enableSuggestions: false,
+              autocorrect: false,
+              obscureText: true,
+              keyboardType: TextInputType.visiblePassword,
+              decoration: InputDecoration(
+                hintText: 'Enter your password here',
+                labelText: 'Password',
+                labelStyle: TextStyle(
                   color: ColorConstants.accentColor,
-                  width: 1.0,
                 ),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: ColorConstants.accentColor,
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: ColorConstants.accentColor,
+                    width: 1.0,
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: ColorConstants.accentColor,
+                  ),
                 ),
               ),
             ),
@@ -91,7 +97,7 @@ class LoginColumn extends StatelessWidget {
                 );
               },
               child: Text(
-                'Register',
+                'Login',
                 style: GoogleFonts.roboto(
                   fontSize: 20,
                 ),
