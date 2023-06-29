@@ -19,6 +19,7 @@ class _AuthViewState extends State<AuthView> {
         FocusScope.of(context).unfocus();
       },
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         // backgroundColor: Colors.green,
         body: Container(
           decoration: const BoxDecoration(
