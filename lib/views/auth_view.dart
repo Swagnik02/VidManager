@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:vidmanager/component/register_column.dart';
+import 'package:vidmanager/authComponents/title_auth.dart';
+import 'package:vidmanager/authComponents/login_column.dart';
+
+import '../authComponents/register_column.dart';
 
 class AuthView extends StatefulWidget {
   const AuthView({super.key});
@@ -18,21 +21,7 @@ class _AuthViewState extends State<AuthView> {
           padding: const EdgeInsetsDirectional.all(16.0),
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(
-                  0.00,
-                  10.0,
-                  0.00,
-                  0.00,
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text('tinder'),
-                  ],
-                ),
-              ),
+              const TitleAuth(),
               Expanded(
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(
@@ -75,12 +64,10 @@ class _AuthViewState extends State<AuthView> {
                                 ),
                               ),
                             ),
-                            child: TabBarView(
+                            child: const TabBarView(
                               children: [
-                                const RegisterColumn(),
-                                Column(
-                                  children: const [Text('Tab 2')],
-                                )
+                                RegisterColumn(),
+                                LoginColumn(),
                               ],
                             ),
                           ),

@@ -31,26 +31,27 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-        future: Firebase.initializeApp(
-          options: DefaultFirebaseOptions.currentPlatform,
-        ),
-        builder: (context, snapshot) {
-          switch (snapshot.connectionState) {
-            case ConnectionState.done:
-              final user = FirebaseAuth.instance.currentUser;
-              if (user != null) {
-                if (user.emailVerified) {
-                  return const MainView();
-                } else {
-                  return const VerifyEmailView();
-                }
+      future: Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      ),
+      builder: (context, snapshot) {
+        switch (snapshot.connectionState) {
+          case ConnectionState.done:
+            final user = FirebaseAuth.instance.currentUser;
+            if (user != null) {
+              if (user.emailVerified) {
+                return const MainView();
               } else {
-                return const LoginView();
+                return const VerifyEmailView();
               }
+            } else {
+              return const LoginView();
+            }
 
-            default:
-              return const CircularProgressIndicator();
-          }
-        });
+          default:
+            return const CircularProgressIndicator();
+        }
+      },
+    );
   }
 }
