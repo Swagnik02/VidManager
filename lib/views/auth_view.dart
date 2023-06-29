@@ -29,7 +29,7 @@ class _AuthViewState extends State<AuthView> {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsetsDirectional.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
                 const TitleAuth(),
@@ -48,6 +48,8 @@ class _AuthViewState extends State<AuthView> {
                         children: [
                           const TabBar(
                             indicatorColor: Colors.white,
+                            labelColor: Colors.white,
+                            unselectedLabelColor: Colors.grey,
                             tabs: [
                               Tab(
                                 text: 'Register',
