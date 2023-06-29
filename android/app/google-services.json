@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "491916877729",
+    "project_id": "vidmanager",
+    "storage_bucket": "vidmanager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491916877729:android:de4bc4a3dcc7b6ee35f5e0",
+        "android_client_info": {
+          "package_name": "com.example.vidmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491916877729-ea722o26slu9tlg4phcg5t0ntaveu5q4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC185_jlVn4BJl-Tm-9EB10T2YKOvmduSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491916877729-ea722o26slu9tlg4phcg5t0ntaveu5q4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "491916877729-s5rlv5k02qb3125b49jnsr35h25i0a22.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.vidmanager"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
