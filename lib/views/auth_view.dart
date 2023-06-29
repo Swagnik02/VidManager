@@ -48,6 +48,7 @@ class _AuthViewState extends State<AuthView> {
                         children: [
                           const TabBar(
                             indicatorColor: Colors.white,
+                            indicatorWeight: 1,
                             labelColor: Colors.white,
                             unselectedLabelColor: Colors.grey,
                             tabs: [
