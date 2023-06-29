@@ -15,6 +15,9 @@ class _AuthViewState extends State<AuthView> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
       child: Scaffold(
         // backgroundColor: Colors.green,
         body: Container(
