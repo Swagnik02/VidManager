@@ -17,7 +17,7 @@ void main() {
       ),
       home: const AuthView(),
       routes: {
-        mainRoute: (context) => const MainView(),
+        mainRoute: (context) => const HomePage(),
       },
     ),
   );

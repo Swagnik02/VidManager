@@ -9,14 +9,13 @@ import '../component/cust_text_field.dart';
 import '../constants/routes.dart';
 
 class RegisterColumn extends StatelessWidget {
-  const RegisterColumn({Key? key}) : super(key: key);
+  RegisterColumn({super.key});
+  final TextEditingController _username = TextEditingController();
+  final TextEditingController _email = TextEditingController();
+  final TextEditingController _password = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController _username = TextEditingController();
-    final TextEditingController _email = TextEditingController();
-    final TextEditingController _password = TextEditingController();
-
     return Column(
       children: [
         const SizedBox(height: 16.0),

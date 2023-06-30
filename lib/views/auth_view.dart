@@ -5,7 +5,7 @@ import 'package:vidmanager/authComponents/login_column.dart';
 import '../authComponents/register_column.dart';
 
 class AuthView extends StatefulWidget {
-  const AuthView({super.key});
+  const AuthView({Key? key}) : super(key: key);
 
   @override
   State<AuthView> createState() => _AuthViewState();
@@ -78,10 +78,10 @@ class _AuthViewState extends State<AuthView> {
                                   ),
                                 ),
                               ),
-                              child: const TabBarView(
+                              child: TabBarView(
                                 children: [
                                   RegisterColumn(),
-                                  LoginColumn(),
+                                  const LoginColumn(),
                                 ],
                               ),
                             ),
